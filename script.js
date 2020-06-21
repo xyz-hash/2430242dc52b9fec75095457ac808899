@@ -59,10 +59,4 @@ $(function() {
       $("span").toggleClass("toggle");
    }
    
-   setInterval(abc, 100);
-   
-   function abc() {
-      $(".cmd").toggleClass("cli");
-   }
-
 });
