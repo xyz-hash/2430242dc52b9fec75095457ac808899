@@ -60,7 +60,6 @@ $(function() {
    }
    
    $(".secret").on("click", function() {
-      $(".secret).toggleClass("show");
       $(".secret).toggleClass("hide");
    })
                    
