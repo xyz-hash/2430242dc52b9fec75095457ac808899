@@ -1,4 +1,12 @@
 $(function() {
+   
+   var rnd = function(min, max) {
+      return Math.random() * (max - min) + min;
+   };
+
+   $(".hack-slider").height($(".slide:nth-child(1)", this).height());
+   $(".slide:first-child", ".hack-slider").addClass('hack first');
+   $(".slide:last-child", ".hack-slider").addClass('last')
 
    function slideEffect() {
       var timer = setInterval(function() {
