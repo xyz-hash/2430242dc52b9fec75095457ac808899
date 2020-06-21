@@ -59,6 +59,6 @@ $(function() {
       $("span").toggleClass("toggle");
    }
    
-   // $hiddenMessage = yang pernah memendam rasa tanpa pernah berharap lebih
+   $hiddenMessage = "075186c6f8a20c54444e5784aeac5b5e";
                    
 });
