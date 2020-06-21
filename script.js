@@ -58,9 +58,5 @@ $(function() {
    function xyz() {
       $("span").toggleClass("toggle");
    }
-   
-   $(".secret").on("click", function() {
-      $(".secret").text("yang pernah memendam rasa... tanpa berharap lebih");
-   })
                    
 });
