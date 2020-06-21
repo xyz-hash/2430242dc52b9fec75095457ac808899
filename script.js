@@ -60,7 +60,7 @@ $(function() {
    }
    
    $(".secret").on("click", function() {
-      $(".secret).toggleClass("hide");
+      $(".secret").toggleClass("hide");
    })
                    
 });
