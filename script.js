@@ -56,11 +56,11 @@ $(function() {
    setInterval(xyz, 1000);
    
    function xyz() {
-      $("#underScore").toggleClass("toggle");
+      $("span").toggleClass("toggle");
    }
    
    $(".secret").on("click", function() {
-      $(".secret").toggleClass("hide");
+      $(".secret").text("yang pernah memendam rasa... tanpa berharap lebih");
    })
                    
 });
