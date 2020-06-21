@@ -58,5 +58,7 @@ $(function() {
    function xyz() {
       $("span").toggleClass("toggle");
    }
+   
+   // $hiddenMessage = yang pernah memendam rasa tanpa pernah berharap lebih
                    
 });
