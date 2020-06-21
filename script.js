@@ -1,17 +1,30 @@
 $(function() {
    
-   document.documentElement.requestFullscreen();
-
-var elem = document.body; // Make the body go full screen.
-requestFullScreen(elem);
-
-   var rnd = function(min, max) {
-      return Math.random() * (max - min) + min;
-   };
-
-   $(".hack-slider").height($(".slide:nth-child(1)", this).height());
-   $(".slide:first-child", ".hack-slider").addClass('hack first');
-   $(".slide:last-child", ".hack-slider").addClass('last')
+   	function toggleFullScreen() {
+		if ((document.fullScreenElement !== undefined && document.fullScreenElement === null) || (document.msFullscreenElement !== undefined && document.msFullscreenElement === null) || (document.mozFullScreen !== undefined && !document.mozFullScreen) || (document.webkitIsFullScreen !== undefined && !document.webkitIsFullScreen)) {
+			if (document.documentElement.requestFullScreen) {
+				document.documentElement.requestFullScreen();
+			} else if (document.documentElement.mozRequestFullScreen) {
+				document.documentElement.mozRequestFullScreen();
+			} else if (document.documentElement.webkitRequestFullScreen) {
+				document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+			} else if (document.documentElement.msRequestFullscreen) {
+				document.documentElement.msRequestFullscreen();
+			}
+		} else {
+			if (document.cancelFullScreen) {
+				document.cancelFullScreen();
+			} else if (document.mozCancelFullScreen) {
+				document.mozCancelFullScreen();
+			} else if (document.webkitCancelFullScreen) {
+				document.webkitCancelFullScreen();
+			} else if (document.msExitFullscreen) {
+				document.msExitFullscreen();
+			}
+		}
+	}
+   
+   toggleFullScreen();
 
    function slideEffect() {
       var timer = setInterval(function() {
