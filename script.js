@@ -56,7 +56,7 @@ $(function() {
    setInterval(xyz, 1000);
    
    function xyz() {
-      $("span").toggleClass("toggle");
+      $("#underScore").toggleClass("toggle");
    }
    
    $(".secret").on("click", function() {
