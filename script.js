@@ -59,6 +59,6 @@ $(function() {
       $("span").toggleClass("toggle");
    }
    
-   $hiddenMessage = "yang pernah memendam rasa, tanpa berharap lebih";
+   $hiddenMessage = "...yang pernah memendam rasa,... tanpa berharap lebih";
                    
 });
